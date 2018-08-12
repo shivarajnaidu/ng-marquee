@@ -1,0 +1,33 @@
+.ng-marquee-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.ng-marquee-wrapper > div {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    transform: translateX(100%);
+    animation: marqueeAnimation 18s linear 1s infinite;
+    white-space: nowrap;
+}
+
+@keyframes marqueeAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 500px) {
+    .ng-marquee-wrapper > div {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        transform: translateX(100%);
+        animation: marqueeAnimation 9s linear 1s infinite;
+        white-space: nowrap;
+    } 
+}

@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-marquee": [
+        "dist/ng-marquee"
+      ],
+      "ng-marquee/*": [
+        "dist/ng-marquee/*"
+      ]
+    }
   }
 }

@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "ng-marquee": {
+      "root": "projects/ng-marquee",
+      "sourceRoot": "projects/ng-marquee/src",
+      "projectType": "library",
+      "prefix": "ng",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-marquee/tsconfig.lib.json",
+            "project": "projects/ng-marquee/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ng-marquee/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-marquee/src/test.ts",
+            "tsConfig": "projects/ng-marquee/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-marquee/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-marquee/tsconfig.lib.json",
+              "projects/ng-marquee/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng-marquee-app"
