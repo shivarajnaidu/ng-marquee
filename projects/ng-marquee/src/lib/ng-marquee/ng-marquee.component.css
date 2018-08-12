@@ -8,8 +8,12 @@
     height: 100%;
     margin: 0;
     transform: translateX(100%);
-    animation: marqueeAnimation 18s linear 1s infinite;
+    animation: marqueeAnimation 25s linear 0s infinite;
     white-space: nowrap;
+}
+
+.ng-marquee-wrapper:hover > div {
+    animation-play-state: paused; 
 }
 
 @keyframes marqueeAnimation {
