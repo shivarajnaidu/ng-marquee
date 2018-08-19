@@ -1,6 +1,7 @@
 # ng-marquee
 Angular 2+ Component For Marquee Text
 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/shivarajnaidu)
 
 ( This Library Is Using Angular CLI's Library Generation Command )
 
