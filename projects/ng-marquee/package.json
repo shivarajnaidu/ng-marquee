@@ -1,6 +1,6 @@
 {
   "name": "ng-marquee",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Angular 6+ CSS Marquee (Alternative To HTML Marquee Tag)",
   "keywords": [
     "angular",
