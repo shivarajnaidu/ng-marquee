@@ -57,3 +57,6 @@ export class AppModule { }
     <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank"> https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
 </ng-marquee>
 ```
+
+## Any contributions are appreciated.
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/shivarajnaidu)
