@@ -4,21 +4,21 @@
 }
 
 .ng-marquee-wrapper > div {
-    width: 100%;
     height: 100%;
+    display: inline-block;
     margin: 0;
-    transform: translateX(100%);
-    animation: marqueeAnimation 25s linear 0s infinite;
+    padding-left: 100%;
+    animation: marqueeAnimation 20s linear 0s infinite;
     white-space: nowrap;
 }
 
 .ng-marquee-wrapper:hover > div {
-    animation-play-state: paused; 
+    animation-play-state: paused;
 }
 
 @keyframes marqueeAnimation {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     100% {
         transform: translateX(-100%);
