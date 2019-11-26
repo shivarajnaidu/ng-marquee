@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, Input, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'ng-marquee',
@@ -6,23 +6,26 @@ import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core
   styleUrls: ['./ng-marquee.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NgMarqueeComponent implements OnInit {
+export class NgMarqueeComponent implements OnInit, AfterViewInit {
 
   @Input() duration: string | number;
-  animationElem: HTMLDivElement;
+  @ViewChild('marqueeContainer', { static: true }) animationElem: ElementRef<HTMLDivElement>;
 
   constructor(
   ) { }
 
-  updateDuration() {
+  private updateDuration() {
     if (!this.duration) {
       return;
     }
-    this.animationElem.style.animationDuration = `${this.duration}s`;
+
+    this.animationElem.nativeElement.style.animationDuration = `${this.duration}s`;
   }
 
   ngOnInit() {
-    this.animationElem = document.querySelectorAll('.ng-marquee-wrapper > div')[0] as HTMLDivElement;
+  }
+
+  ngAfterViewInit() {
     this.updateDuration();
   }
 
