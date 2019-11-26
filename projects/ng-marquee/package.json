@@ -1,14 +1,14 @@
 {
   "name": "ng-marquee",
   "version": "1.0.1",
-  "description": "Angular 6+ CSS Marquee (Alternative To HTML Marquee Tag)",
+  "description": "Angular 8+ CSS Marquee (Alternative To HTML Marquee Tag)",
   "keywords": [
     "angular",
     "ng-marquee",
     "marquee",
     "moving text",
     "scrollling text",
-    "angular 2+",
+    "Angular 8+",
     "angular 6"
   ],
   "author": "Yuvaraj",
