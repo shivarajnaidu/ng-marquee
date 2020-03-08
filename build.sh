@@ -6,7 +6,7 @@ cd ./projects/ng-marquee
 npm version minor
 
 cd ../../
-npm version minor
+# npm version minor
 
 ng build ng-marquee
 
