@@ -1,37 +1,254 @@
-.ng-marquee-wrapper {
+.ng-marquee {
     overflow: hidden;
-    position: relative;
+    text-align: left;
 }
 
-.ng-marquee-wrapper > div {
-    height: 100%;
-    display: inline-block;
-    margin: 0;
-    padding-left: 100%;
-    animation: marqueeAnimation 20s linear 0s infinite;
-    white-space: nowrap;
+.ng-marquee.ng-marquee-speed-drowsy>span {
+    animation-duration: 30s;
 }
 
-.ng-marquee-wrapper:hover > div {
-    animation-play-state: paused;
+.ng-marquee.ng-marquee-speed-slow>span {
+    animation-duration: 20s;
 }
 
-@keyframes marqueeAnimation {
+.ng-marquee.ng-marquee-speed-custom>span {
+    animation-duration: inherit;
+}
+
+.ng-marquee.ng-marquee-speed-normal>span {
+    animation-duration: 10s;
+}
+
+.ng-marquee.ng-marquee-speed-fast>span {
+    animation-duration: 7s;
+}
+
+.ng-marquee.ng-marquee-speed-swift>span {
+    animation-duration: 5s;
+}
+
+.ng-marquee.ng-marquee-speed-hyper>span {
+    animation-duration: 2s;
+}
+
+@keyframes movement-smooth {
+    from {
+        transform: translateX(0%);
+        left: 100%;
+    }
+    to {
+        transform: translateX(-100%);
+        left: 0%;
+    }
+}
+
+@keyframes movement-steps20 {
     0% {
-        transform: translateX(0);
+        transform: translateX(0%);
+        left: 100%;
+    }
+    5%, 9.99% {
+        transform: translateX(-5%);
+        left: 95%;
+    }
+    10%, 14.99% {
+        transform: translateX(-10%);
+        left: 90%;
+    }
+    15%, 19.99% {
+        transform: translateX(-15%);
+        left: 85%;
+    }
+    20%, 24.99% {
+        transform: translateX(-20%);
+        left: 80%;
+    }
+    25%, 29.99% {
+        transform: translateX(-25%);
+        left: 75%;
+    }
+    30%, 34.99% {
+        transform: translateX(-30%);
+        left: 70%;
+    }
+    35%, 39.99% {
+        transform: translateX(-35%);
+        left: 65%;
+    }
+    40%, 44.99% {
+        transform: translateX(-40%);
+        left: 60%;
+    }
+    45%, 49.99% {
+        transform: translateX(-45%);
+        left: 55%;
+    }
+    50%, 54.99% {
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    55%, 59.99% {
+        transform: translateX(-55%);
+        left: 45%;
+    }
+    60%, 64.99% {
+        transform: translateX(-60%);
+        left: 40%;
+    }
+    65%, 69.99% {
+        transform: translateX(-65%);
+        left: 35%;
+    }
+    70%, 74.99% {
+        transform: translateX(-70%);
+        left: 30%;
+    }
+    75%, 79.99% {
+        transform: translateX(-75%);
+        left: 25%;
+    }
+    80%, 84.99% {
+        transform: translateX(-80%);
+        left: 20%;
+    }
+    85%, 89.99% {
+        transform: translateX(-85%);
+        left: 15%;
+    }
+    90%, 94.99% {
+        transform: translateX(-90%);
+        left: 10%;
+    }
+    95%, 99.99% {
+        transform: translateX(-95%);
+        left: 5%;
     }
     100% {
         transform: translateX(-100%);
+        left: 0%;
     }
 }
 
-@media (max-width: 500px) {
-    .ng-marquee-wrapper > div {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        transform: translateX(100%);
-        animation: marqueeAnimation 9s linear 1s infinite;
-        white-space: nowrap;
-    } 
+@keyframes movement-steps10 {
+    0% {
+        transform: translateX(0%);
+        left: 100%;
+    }
+    10%, 19.99% {
+        transform: translateX(-10%);
+        left: 90%;
+    }
+    20%, 29.99% {
+        transform: translateX(-20%);
+        left: 80%;
+    }
+    30%, 39.99% {
+        transform: translateX(-30%);
+        left: 70%;
+    }
+    40%, 49.99% {
+        transform: translateX(-40%);
+        left: 60%;
+    }
+    50%, 59.99% {
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    60%, 69.99% {
+        transform: translateX(-60%);
+        left: 40%;
+    }
+    70%, 79.99% {
+        transform: translateX(-70%);
+        left: 30%;
+    }
+    80%, 89.99% {
+        transform: translateX(-80%);
+        left: 20%;
+    }
+    90%, 99.99% {
+        transform: translateX(-90%);
+        left: 10%;
+    }
+    100% {
+        transform: translateX(-100%);
+        left: 0%;
+    }
+}
+
+@keyframes movement-steps5 {
+    0%, 19.99% {
+        transform: translateX(0%);
+        left: 100%;
+    }
+    20%, 39.99% {
+        transform: translateX(-20%);
+        left: 80%;
+    }
+    40%, 59.99% {
+        transform: translateX(-40%);
+        left: 60%;
+    }
+    60%, 79.99% {
+        transform: translateX(-60%);
+        left: 40%;
+    }
+    80%, 99.99% {
+        transform: translateX(-80%);
+        left: 20%;
+    }
+    100% {
+        transform: translateX(-100%);
+        left: 0%;
+    }
+}
+
+.ng-marquee.ng-marquee-movement-smooth>span {
+    animation-name: movement-smooth;
+}
+
+.ng-marquee.ng-marquee-movement-steps20>span {
+    animation-name: movement-steps20;
+}
+
+.ng-marquee.ng-marquee-movement-steps10>span {
+    animation-name: movement-steps10;
+}
+
+.ng-marquee.ng-marquee-movement-steps5>span {
+    animation-name: movement-steps5;
+}
+
+.ng-marquee.ng-marquee-direction-left>span, .ng-marquee.ng-marquee-direction-normal>span {
+    animation-direction: normal;
+}
+
+.ng-marquee.ng-marquee-direction-alternate>span {
+    animation-direction: alternate;
+}
+
+.ng-marquee.ng-marquee-direction-right>span, .ng-marquee.ng-marquee-direction-reverse>span {
+    animation-direction: reverse;
+}
+
+.ng-marquee>span {
+    content: attr(data-marquee);
+    white-space: nowrap;
+    position: relative;
+    transform: translateX(-50%);
+    display: inline-block;
+    left: 50%;
+    animation: linear infinite;
+}
+
+.ng-marquee>span {
+    animation-duration: 10s;
+}
+
+.ng-marquee>span {
+    animation-name: movement-smooth;
+}
+
+.ng-marquee>span {
+    animation-direction: normal;
 }

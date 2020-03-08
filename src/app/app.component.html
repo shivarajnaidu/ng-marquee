@@ -1,18 +1,52 @@
 <h1 style="text-align: center;">ng-marquee</h1>
+
+<!-- Content With Any length -->
+
 <section>
-    <h2>Basic Example</h2>
-    <div style="width: 90%; border: 1px solid green; margin:auto;">
-      <ng-marquee>
-        <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank"> https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
-      </ng-marquee>
-    </div>
-  </section>
-  <!-- With Duration Property -->
+  <h2>Content With Any length</h2>
+  <ng-marquee>
+    <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
+        https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+  </ng-marquee>
+</section>
+
+
+<!-- Speed Adjustment -->
 <section>
-  <h2>With Duration Property</h2>
+  <h2>Speed Adjustment</h2>
   <div style="width: 90%; border: 1px solid green; margin:auto;">
     <ng-marquee duration="30">
-      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank"> https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
+          https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+    </ng-marquee>
+  </div>
+</section>
+
+<!-- Direction Change -->
+<section>
+  <h2>Direction Change</h2>
+
+  <h3>Left</h3>
+  <div style="width: 90%; border: 1px solid green; margin:auto;">
+    <ng-marquee direction="left">
+      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
+          https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+    </ng-marquee>
+  </div>
+
+  <h3>Right</h3>
+  <div style="width: 90%; border: 1px solid green; margin:auto;">
+    <ng-marquee direction="right">
+      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
+          https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+    </ng-marquee>
+  </div>
+
+  <h3>Alternate</h3>
+  <div style="width: 90%; border: 1px solid green; margin:auto;">
+    <ng-marquee direction="alternate">
+      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
+          https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
     </ng-marquee>
   </div>
 </section>

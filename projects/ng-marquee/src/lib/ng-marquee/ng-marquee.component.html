@@ -1,5 +1,9 @@
-<div class="ng-marquee-wrapper">
-  <div #marqueeContainer>
-      <ng-content></ng-content>
-  </div>
+<div class="ng-marquee" [ngClass]="{
+  'ng-marquee-direction-left': marqueeDirection.left === direction,
+  'ng-marquee-direction-right': marqueeDirection.right === direction,
+  'ng-marquee-direction-alternate': marqueeDirection.alternate === direction
+}">
+  <span>
+    <ng-content></ng-content>
+  </span>
 </div>
