@@ -47,16 +47,47 @@ export class AppModule { }
 
 ## API
 
-### input property
+### input properties
 
-###
-`duration` property available for controlling speed of text movement
-(default value is 25 in seconds)
+### @Input() speed
+  `speed` property available for controlling speed of text movement
+
+#### possible values
+* drowsy
+* slow
+* normal
+* fast
+* swift
+* hyper
+
+### Example
 
 ```html
-<ng-marquee duration="30">
+<ng-marquee speed="drowsy">
     <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank"> https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
 </ng-marquee>
+```
+
+### @Input() direction
+  `direction` property available for controlling direction of movement
+
+#### possible values
+* left
+* right
+* alternate
+
+### Example
+
+```html
+<ng-marquee direction="right">
+    <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank"> https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+</ng-marquee>
+```
+
+## To Build the component
+
+```sh
+ng build ng-marquee
 ```
 
 ## Any contributions are appreciated.
