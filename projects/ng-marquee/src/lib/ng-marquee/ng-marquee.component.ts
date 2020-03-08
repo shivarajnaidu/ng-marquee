@@ -6,6 +6,15 @@ enum MarqueeDirection {
   alternate = 'alternate'
 }
 
+enum MarqueeSpeed {
+  drowsy = 'drowsy',
+  slow = 'slow',
+  normal = 'normal',
+  fast = 'fast',
+  swift = 'swift',
+  hyper = 'hyper'
+}
+
 @Component({
   selector: 'ng-marquee',
   templateUrl: './ng-marquee.component.html',
@@ -18,6 +27,7 @@ export class NgMarqueeComponent implements OnInit {
   @Input() direction: MarqueeDirection;
 
   marqueeDirection = MarqueeDirection;
+  marqueeSpeed = MarqueeSpeed;
 
   ngOnInit() {
   }

@@ -1,7 +1,13 @@
 <div class="ng-marquee" [ngClass]="{
   'ng-marquee-direction-left': marqueeDirection.left === direction,
   'ng-marquee-direction-right': marqueeDirection.right === direction,
-  'ng-marquee-direction-alternate': marqueeDirection.alternate === direction
+  'ng-marquee-direction-alternate': marqueeDirection.alternate === direction,
+  'ng-marquee-speed-drowsy': marqueeSpeed.drowsy === speed,
+  'ng-marquee-speed-slow': marqueeSpeed.slow === speed,
+  'ng-marquee-speed-normal': marqueeSpeed.normal === speed,
+  'ng-marquee-speed-fast': marqueeSpeed.fast === speed,
+  'ng-marquee-speed-swift': marqueeSpeed.swift === speed,
+  'ng-marquee-speed-hyper': marqueeSpeed.hyper === speed
 }">
   <span>
     <ng-content></ng-content>
