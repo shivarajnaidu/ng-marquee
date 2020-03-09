@@ -25,6 +25,7 @@ export class NgMarqueeComponent implements OnInit {
 
   @Input() speed: string | number;
   @Input() direction: MarqueeDirection;
+  @Input() stopOnHover = false;
 
   marqueeDirection = MarqueeDirection;
   marqueeSpeed = MarqueeSpeed;

@@ -7,10 +7,11 @@ Angular 6+ Component For Marquee Text
 
 ## How to:
 
-### Install npm 
+### Install [https://www.npmjs.com/package/ng-marquee](npm) 
 ```
    npm install ng-marquee --save
 ```
+
 
 ### Simple Example
 
@@ -65,6 +66,23 @@ export class AppModule { }
 ```html
 <ng-marquee speed="drowsy">
     <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank"> https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+</ng-marquee>
+```
+
+
+### @Input() stopOnHover
+  `stopOnHover` property is usefull to stop the content movement on hover
+
+#### possible values
+* true
+* false
+
+### Example
+
+```html
+<ng-marquee [stopOnHover]="true">
+  <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
+      https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
 </ng-marquee>
 ```
 

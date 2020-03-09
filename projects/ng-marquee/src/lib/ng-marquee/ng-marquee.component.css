@@ -31,6 +31,11 @@
     animation-duration: 2s;
 }
 
+/* Pause animation on hover */
+.ng-marquee.ng-marquee-stop-on-hover:hover>span {
+    animation-play-state: paused;
+}
+
 @keyframes movement-smooth {
     from {
         transform: translateX(0%);
