@@ -7,11 +7,12 @@ Angular 6+ Component For Marquee Text
 
 ## How to:
 
-### Install [https://www.npmjs.com/package/ng-marquee](npm) 
+### Install [npm](https://www.npmjs.com/package/ng-marquee) 
 ```
    npm install ng-marquee --save
 ```
 
+## [Demo](https://stackblitz.com/github/shivarajnaidu/ng-marquee)
 
 ### Simple Example
 
