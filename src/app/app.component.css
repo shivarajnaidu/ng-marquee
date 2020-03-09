@@ -1,4 +1,15 @@
 ng-marquee {
-    border: 1px solid red;
+    border: 2px solid #38b734;
     display: block;
+}
+
+h2 {
+    margin-top: 3rem;
+    color: brown;
+    font-family: monospace;
+}
+
+h3 {
+    color: blue;
+    font-family: monospace;
 }

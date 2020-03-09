@@ -1,12 +1,15 @@
 <h1 style="text-align: center;"><a href="github.com/shivarajnaidu/ng-marquee/">ng-marquee</a></h1>
 
-<!-- Content With Any length -->
+<ng-template #marqueeContent>
+  <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
+      https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+</ng-template>
 
+<!-- Content With Any length -->
 <section>
   <h2>Content With Any length</h2>
   <ng-marquee>
-    <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
-        https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+    <ng-container *ngTemplateOutlet="marqueeContent"></ng-container>
   </ng-marquee>
 </section>
 
@@ -14,8 +17,7 @@
 <section>
   <h2>Stop On Hover</h2>
   <ng-marquee [stopOnHover]="true">
-    <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
-        https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+    <ng-container *ngTemplateOutlet="marqueeContent"></ng-container>
   </ng-marquee>
 </section>
 
@@ -28,16 +30,14 @@
   <div>
     <h3>Default</h3>
     <ng-marquee>
-      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
-          https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+      <ng-container *ngTemplateOutlet="marqueeContent"></ng-container>
     </ng-marquee>
   </div>
 
   <div>
     <h3>Drowsy</h3>
     <ng-marquee speed="drowsy">
-      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
-          https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+      <ng-container *ngTemplateOutlet="marqueeContent"></ng-container>
     </ng-marquee>
   </div>
 
@@ -45,16 +45,14 @@
   <div>
     <h3>Slow</h3>
     <ng-marquee speed="slow">
-      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
-          https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+      <ng-container *ngTemplateOutlet="marqueeContent"></ng-container>
     </ng-marquee>
   </div>
 
   <div>
     <h3>Normal</h3>
     <ng-marquee speed="normal">
-      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
-          https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+      <ng-container *ngTemplateOutlet="marqueeContent"></ng-container>
     </ng-marquee>
   </div>
 
@@ -62,16 +60,14 @@
   <div>
     <h3>Fast</h3>
     <ng-marquee speed="fast">
-      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
-          https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+      <ng-container *ngTemplateOutlet="marqueeContent"></ng-container>
     </ng-marquee>
   </div>
 
   <div>
     <h3>Swift</h3>
     <ng-marquee speed="swift">
-      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
-          https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+      <ng-container *ngTemplateOutlet="marqueeContent"></ng-container>
     </ng-marquee>
   </div>
 
@@ -79,8 +75,7 @@
   <div>
     <h3>Hyper</h3>
     <ng-marquee speed="hyper">
-      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
-          https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+      <ng-container *ngTemplateOutlet="marqueeContent"></ng-container>
     </ng-marquee>
   </div>
 
@@ -94,24 +89,21 @@
   <div>
     <h3>Left</h3>
     <ng-marquee direction="left">
-      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
-          https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+      <ng-container *ngTemplateOutlet="marqueeContent"></ng-container>
     </ng-marquee>
   </div>
 
   <div>
     <h3>Right</h3>
     <ng-marquee direction="right">
-      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
-          https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+      <ng-container *ngTemplateOutlet="marqueeContent"></ng-container>
     </ng-marquee>
   </div>
 
   <div>
     <h3>Alternate</h3>
     <ng-marquee direction="alternate">
-      <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank">
-          https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+      <ng-container *ngTemplateOutlet="marqueeContent"></ng-container>
     </ng-marquee>
   </div>
 </section>
