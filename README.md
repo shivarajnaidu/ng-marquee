@@ -111,3 +111,5 @@ ng build ng-marquee
 
 ## Any contributions are appreciated.
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/shivarajnaidu)
+
+#### Inspired by https://github.com/muchweb/html5-marquee
