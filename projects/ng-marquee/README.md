@@ -71,6 +71,18 @@ export class AppModule { }
 ```
 
 
+### For Custom Speed
+### @Input() duration: string
+
+### Example
+
+```html
+<ng-marquee duration="90s">
+    <mark>Hello, World.... Find Me @ <a href="https://www.linkedin.com/in/shivarajnaidu/" target="__blank"> https://www.linkedin.com/in/shivarajnaidu/ (Yuvaraj)</a></mark>
+</ng-marquee>
+```
+
+
 ### @Input() stopOnHover
   `stopOnHover` property is usefull to stop the content movement on hover
 
