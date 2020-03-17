@@ -9,9 +9,8 @@
   'ng-marquee-speed-swift': marqueeSpeed.swift === speed,
   'ng-marquee-speed-hyper': marqueeSpeed.hyper === speed,
   'ng-marquee-stop-on-hover': stopOnHover
-}"
->
-  <span>
+}">
+  <span [ngStyle]="{'animation-duration': duration}">
     <ng-content></ng-content>
   </span>
 </div>

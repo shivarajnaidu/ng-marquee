@@ -12,7 +12,7 @@ enum MarqueeSpeed {
   normal = 'normal',
   fast = 'fast',
   swift = 'swift',
-  hyper = 'hyper'
+  hyper = 'hyper',
 }
 
 @Component({
@@ -23,7 +23,8 @@ enum MarqueeSpeed {
 })
 export class NgMarqueeComponent implements OnInit {
 
-  @Input() speed: string | number;
+  @Input() speed: string;
+  @Input() duration: string;
   @Input() direction: MarqueeDirection;
   @Input() stopOnHover = false;
 

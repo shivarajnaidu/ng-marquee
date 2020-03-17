@@ -11,10 +11,6 @@
     animation-duration: 20s;
 }
 
-.ng-marquee.ng-marquee-speed-custom>span {
-    animation-duration: inherit;
-}
-
 .ng-marquee.ng-marquee-speed-normal>span {
     animation-duration: 10s;
 }
